@@ -1,0 +1,23 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    
+    <lightning-modal-body class="modal-bg">
+        <div class="content slds-card slds-var-p-around_x-small">
+       
+            <div class="title-container">
+             <lightning-icon
+             icon-name="standard:people"
+             class="my-icon"
+             size="small"
+             alternative-text="New Contact Create"
+         >
+         </lightning-icon>
+         <p class="title">New {objectApiName}</p>
+              </div>
+        <lightning-flow class="flow-bg" if:true={flowName} onstatuschange={handleStatusChange} flow-api-name={flowName} flow-input-variables={inputVariables}
+    >
+    </lightning-flow>
+    </div>
+    </lightning-modal-body>
+</template>
+<!-- sldsValidatorIgnore -->
